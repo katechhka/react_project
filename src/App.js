@@ -1,9 +1,9 @@
 import './styles/normalize.css';
 import './App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Table from './components/Table';
-import Card from './components/Card';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Table from './components/Table/Table';
+import Card from './components/Card/Card';
 
 const words=[
   {
@@ -11,7 +11,6 @@ const words=[
     english:"family",
     transcription:"[ ˈfæm. ə l.i ]",
     russian:"семья",
-    isSelected:true
   },
   {
     id:"2",
@@ -57,6 +56,7 @@ const words=[
   },
 ]
 function App() {
+  
   return (
     <div className="App">
       <Header/>
@@ -65,10 +65,12 @@ function App() {
           <Table
             english={word.english}
             transcription={word.transcription}
+            russian={word.russian}
             isSelected={word.isSelected}
           ></Table>
         ))}
       </div>
+      <Card/>
       <Footer/>
     </div>
   );
