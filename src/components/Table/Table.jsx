@@ -6,13 +6,11 @@ import recycle from "../../images/recycle-bin.png"
 import close from "../../images/close.png"
 
 function Table(props) {
-  /*const [isSelected, setisSelected] = useState(false);*/
+
   const [isEdit, setisEdit] = useState(false);
   const [isDelete, setisDelete] = useState(false);
  
-  /*const handleChange=()=>{
-    setisSelected(!isSelected);
-  }*/
+ 
   const handleEdit=()=>{
     setisEdit(!isEdit);
   }

@@ -1,4 +1,4 @@
-import './styles/normalize.css';
+
 import './App.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -11,8 +11,9 @@ function App() {
     <div className="App">
       <Header/>
       <div className="container">
-        {words.map((word) => (
+        {words.map((word, i) => (
           <Table
+          key={i}
             id={word.id}
             english={word.english}
             transcription={word.transcription}
