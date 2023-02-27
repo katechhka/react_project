@@ -1,5 +1,11 @@
+.card__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
 .card{
-    margin:auto;
     width:20vw;
     height:30vh;
     background-color: beige;
@@ -9,7 +15,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:10%;
+    gap:20px;
 }
 
 .card__button{
@@ -38,3 +44,20 @@
     cursor: pointer;
     display: block;
 }
+.card__buttons{
+
+    display:flex;
+    gap:40px;
+}
+.card__arrowright, .card__arrowleft{
+    width:40px;
+}
+.card__arrowright{
+    transform:rotate(180deg);
+}
+
+/*+.card__arrowright:hover, .card__arrowleft:hover{
+    width:45px;
+    transition: 0.5s ease;
+}
+*/

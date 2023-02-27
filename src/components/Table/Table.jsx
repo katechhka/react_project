@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import "./table.css";
+import "./Table.css";
 import check from "../../images/check.png"
 import pencil from "../../images/pencil.png"
 import recycle from "../../images/recycle-bin.png"
